@@ -1,0 +1,9 @@
+.header__title {
+    height: 120px;
+    margin: 5px auto auto 20px;
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: rgb(53, 53, 226)
+}
