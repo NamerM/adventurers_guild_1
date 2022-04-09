@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: left;
+  max-width: 100%;
   opacity: .90;
   margin-top: 15px;
   background-image: url('../../images/Asterix-village-1-1024x448.png');
