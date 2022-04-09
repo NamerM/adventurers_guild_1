@@ -1,0 +1,6 @@
+.cards__element {
+  max-width: 212px;
+  margin: 10px 10px;
+  border: 1px solid white;
+  background-color: green;
+}
