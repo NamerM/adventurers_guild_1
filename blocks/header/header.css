@@ -1,6 +1,7 @@
 .header {
   display: flex;
   justify-content: left;
+  flex-direction: column;
   max-width: 100%;
   opacity: .90;
   margin-top: 15px;

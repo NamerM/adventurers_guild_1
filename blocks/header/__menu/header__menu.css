@@ -1,7 +1,9 @@
 .header__menu {
-  opacity: .4;
-  background-color: black;
+  max-width: 1024px;
+  opacity: .6;
+  background-color: rgb(20, 20, 20);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: left;
+  text-shadow: none;
 }
