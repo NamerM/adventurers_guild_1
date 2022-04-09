@@ -1,0 +1,9 @@
+.cards__elements {
+  text-decoration: none;
+  margin: 10px auto 50px;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 120px);
+  gap: 30px 30px;
+
+}

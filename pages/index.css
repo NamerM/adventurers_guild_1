@@ -5,6 +5,7 @@
 /* BLOCKS */
 @import url(../blocks/header/header.css);
 
+@import url(../blocks/cards/cards.css);
 @import url(../blocks/footer/footer.css);
 
 /* Elements */
@@ -12,3 +13,5 @@
 @import url(../blocks/header/__menu/header__menu.css);
 @import url(../blocks/header/__menu-item/header__menu-item.css);
 @import url(../blocks/header/__menu-link/header__menu-link.css);
+
+@import url(../blocks/cards/__elements/cards__elements.css);
