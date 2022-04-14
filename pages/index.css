@@ -17,6 +17,7 @@
 
 @import url(../blocks/adventurer-idcard/__image/adventurer-idcard__image.css);
 @import url(../blocks/adventurer-idcard/__info/adventurer-idcard__info.css);
+@import url(../blocks/adventurer-idcard/__lining/adventurer-idcard__lining.css);
 @import url(../blocks/adventurer-idcard/__name/adventurer-idcard__name.css);
 
 @import url(../blocks/cards/__elements/cards__elements.css);

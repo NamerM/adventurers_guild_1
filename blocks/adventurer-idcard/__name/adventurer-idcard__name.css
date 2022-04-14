@@ -1,5 +1,7 @@
-.adveventurer-idcard__name {
+.adventurer-idcard__name {
+  margin: 0;
   font-size: 24px;
   font-weight: 400;
   font-style: italic;
+  flex-direction: row;
 }
