@@ -1,4 +1,6 @@
 .adventurer-idcard__lining {
+  display: flex;
   flex-direction: row;
   margin: 0;
+  line-height: 1.5;
 }

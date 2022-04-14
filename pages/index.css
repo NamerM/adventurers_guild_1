@@ -18,7 +18,12 @@
 @import url(../blocks/adventurer-idcard/__image/adventurer-idcard__image.css);
 @import url(../blocks/adventurer-idcard/__info/adventurer-idcard__info.css);
 @import url(../blocks/adventurer-idcard/__lining/adventurer-idcard__lining.css);
-@import url(../blocks/adventurer-idcard/__name/adventurer-idcard__name.css);
+@import url(../blocks/adventurer-idcard/__button/adventurer-idcard__button.css);
+@import url(../blocks/adventurer-idcard/__text/adventurer-idcard__text.css);
+@import url(../blocks/adventurer-idcard/__text/_name/adventurer-idcard__text_name.css);
+@import url(../blocks/adventurer-idcard/__text/_class/adventurer-idcard__text_class.css);
+@import url(../blocks/adventurer-idcard/__text/_pet/adventurer-idcard__text_pet.css);
+
 
 @import url(../blocks/cards/__elements/cards__elements.css);
 @import url(../blocks/cards/__element/cards__element.css);
