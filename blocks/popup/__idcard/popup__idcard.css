@@ -1,0 +1,9 @@
+.popup__idcard {
+  display: flex;
+  justify-items: center;
+  width: 420px;
+  background-color: beige;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+}
