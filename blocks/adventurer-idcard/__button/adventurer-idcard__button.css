@@ -1,6 +1,11 @@
 .adventurer-idCard__button {
-  margin: 10px 10px 10px auto;
-  height: 25px;
+  margin: 5px 10px 5px auto;
+  background-image: url(../../../images/edit-feather.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  width: 28px;
+  height: 26px;
 }
 
 .adventurer-idCard__button:hover {

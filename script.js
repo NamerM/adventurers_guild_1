@@ -8,16 +8,15 @@ const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
 const idForm = document.querySelector('.popup__form');
 const popupList = document.querySelectorAll('.popup');
 const idCardPopup = document.querySelector('.popup_type_idCard');
-const editButton = document.querySelector('.adventurer-idCard ')
-//const idNameButton = document.querySelector('.button_edit_name');
-//const idClassButton = document.querySelector('.button_edit_class');
-//const idPetButton = document.querySelector('.button_edit_pet');
+const editButton = document.querySelector('.adventurer-idCard__button');
+const changeIdImage = document.querySelector(.'adventurer-idCard__image');//popupIdImage change
 const closeButton = document.querySelector('.popup__close');
 
 const inputName = idCardPopup.querySelector('.popup__input_idCard_name');
 const inputClass = idCardPopup.querySelector('.popup__input_idCard_class');
 const inputPetName = idCardPopup.querySelector('.popup__input_idCard_pet');
 const popupSelector = 'popup__open';
+
 
 //functions of Id Card //
 function openPopup (popup) {
