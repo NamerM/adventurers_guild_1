@@ -2,3 +2,7 @@
   margin: 10px 10px 10px auto;
   height: 25px;
 }
+
+.adventurer-idCard__button:hover {
+  cursor: pointer;
+}

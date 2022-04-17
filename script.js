@@ -4,7 +4,9 @@ const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
 const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
 
-const idForm = document.forms.idCardForm;
+
+const idForm = document.querySelector('.popup__form');
+const popupList = document.querySelectorAll('.popup');
 const idCardPopup = document.querySelector('.popup_type_idCard');
 const editButton = document.querySelector('.adventurer-idCard ')
 //const idNameButton = document.querySelector('.button_edit_name');
@@ -64,8 +66,7 @@ function removeKeyDownListener() {
   document.removeEventListener('keydown', handleKeyDown);
 }
 
-//Closing the popup windows by click
-//const popupList = document.querySelector('.popup');
+//Closing the popup windows by click - //const popupList = document.querySelector('.popup');
 popupList.forEach((popup) => {
   popup.addEventListener('mousedown', (evt) => {
     if(evt.target.matches('.popup')) {
