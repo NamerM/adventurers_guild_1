@@ -1,5 +1,6 @@
 .adventurer-idCard {
   border: 1px solid white;
+  margin-left: calc(100% / 4 );
   background-color: beige;
   display: flex;
   flex-direction: row;

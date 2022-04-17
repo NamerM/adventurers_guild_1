@@ -3,3 +3,9 @@
   display: flex;
   justify-content: center;
 }
+
+.content__header:hover {
+  color: darkolivegreen;
+  font-style: italic;
+  text-shadow: 1px 1px 1px #ffffff;
+}
