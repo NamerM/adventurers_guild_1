@@ -2,9 +2,9 @@
 const idCard = document.querySelector('.adventurer-idCard');
 const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
-const idPetName = idCard.querySelector('.adventurer-idCard__text_petg');
+const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
 
-const idForm = documents.forms.idCardForm;
+const idForm = document.forms.idCardForm;
 const idCardPopup = document.querySelector('.popup_type_idCard');
 const editButton = document.querySelector('.adventurer-idCard ')
 //const idNameButton = document.querySelector('.button_edit_name');
@@ -12,9 +12,9 @@ const editButton = document.querySelector('.adventurer-idCard ')
 //const idPetButton = document.querySelector('.button_edit_pet');
 const closeButton = document.querySelector('.popup__close');
 
-const inputName = document.idCardPopup.querySelector('.popup__input_idCard_name');
-const inputClass = document.idCardPopup.querySelector('.popup__input_idCard_class');
-const inputPetName = document.idCardPopup.querySelector('.popup__input_idCard_pet');
+const inputName = idCardPopup.querySelector('.popup__input_idCard_name');
+const inputClass = idCardPopup.querySelector('.popup__input_idCard_class');
+const inputPetName = idCardPopup.querySelector('.popup__input_idCard_pet');
 const popupSelector = 'popup__open';
 
 //functions of Id Card //
@@ -45,5 +45,32 @@ function handleProfileFormSubmit(event) {
 
 // Event Handlers for idCard
 editButton.addEventListener('click', openProfilePopup);
-idCardPopup.addEventListener('click', handleProfileFormSubmit);
-closeButton.addEventListener('click', () => closePopup(idCardPopup) );
+idCardPopup.addEventListener('submit', handleProfileFormSubmit);
+closeButton.addEventListener('click', () => closePopup(idCardPopup));
+
+//Closing the popup windows escape button//
+function handleKeyDown(evt) {
+  if (evt.key === 'Escape') {
+    const openedPopup = document.querySelector(`.${popupSelector}`);
+    closePopup(openedPopup);
+  }
+}
+
+function addKeyDownListener() {
+  document.addEventListener('keydown', handleKeyDown);
+}
+
+function removeKeyDownListener() {
+  document.removeEventListener('keydown', handleKeyDown);
+}
+
+//Closing the popup windows by click
+//const popupList = document.querySelector('.popup');
+popupList.forEach((popup) => {
+  popup.addEventListener('mousedown', (evt) => {
+    if(evt.target.matches('.popup')) {
+      const openedPopup = document.querySelector(`.${popupSelector}`);
+      closePopup(openedPopup);
+    }
+  });
+});

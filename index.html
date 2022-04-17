@@ -9,27 +9,29 @@
           content="Hobby Project for practice based on Fantasy RPG theme"/>
         <title>Adventurers Guild</title>
     </head>
+    <section class="popup popup_type_idCard" id="popup-idtemplate">
+      <div class="popup__idCard">
+        <form name="idCardForm" class="popup__form" id="idCardTemplate">
+          <h1 class="popup__title">Adventurers IdCard</h1>
+          <label>
+            <input class="popup__input popup__input_idCard_name" type="text" placeholder="Character Name" id="name-input">
+            <span id="name-input-error" class="popup__input-error"></span>
+          </label>
+          <label>
+            <input class="popup__input popup__input_idCard_class" type="text" placeholder="Hero Class" id="class-input">
+            <span id="class-input-error" class="popup__input-error"></span>
+          </label>
+          <label>
+            <input class="popup__input popup__input_idCard_pet" type="text" placeholder="Pet's Name" id="pet-input">
+            <span id="pet-input-error" class="popup__input-error"></span>
+          </label>
+          <submit></submit>
+          <button type='submit' class="popup__submit">Save</button>
+          <button type='button' class="popup__close"></button>
+        </form>
+      </div>
+    </section>
     <body class="page">
-      <section class="popup popup_type_idCard" id="popup-idtemplate">
-        <div class="popup__idCard">
-          <form name="idCardForm" class="popup__form" id="idCardTemplate">
-            <h1 class="popup__title">Adventurers IdCard</h1>
-            <label>
-              <input class="popup__input popup__input_idCard_name" type="text" placeholder="Character Name" id="name-input">
-              <span id="name-input-error" class="popup__input-error"></span>
-            </label>
-            <label>
-              <input class="popup__input popup__input_idCard_class" type="text" placeholder="Hero Class" id="class-input">
-              <span id="class-input-error" class="popup__input-error"></span>
-            </label>
-            <label>
-              <input class="popup__input popup__input_idCard_pet" type="text" placeholder="Pet's Name" id="pet-input">
-              <span id="pet-input-error" class="popup__input-error"></span>
-            </label>
-          </form>
-        </div>
-      </section>
-
         <header class="header">
             <h1 class="header__title"> Adventurers' Guild </h1>
             <div class="header__menu">
@@ -89,6 +91,6 @@
         <footer class="footer">
             Footnotes are essential for each Dungeon Master and RPG players.
         </footer>
+      <script src="./script.js"></script>
     </body>
-
 </html>
