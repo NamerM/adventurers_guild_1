@@ -44,4 +44,6 @@ function handleProfileFormSubmit(event) {
 }
 
 // Event Handlers for idCard
-
+editButton.addEventListener('click', openProfilePopup);
+idCardPopup.addEventListener('click', handleProfileFormSubmit);
+closeButton.addEventListener('click', () => closePopup(idCardPopup) );
