@@ -9,7 +9,7 @@ const idForm = document.querySelector('.popup__form');
 const popupList = document.querySelectorAll('.popup');
 const idCardPopup = document.querySelector('.popup_type_idCard');
 const editButton = document.querySelector('.adventurer-idCard__button');
-const changeIdImage = document.querySelector(.'adventurer-idCard__image');//popupIdImage change
+const changeIdImage = document.querySelector('.adventurer-idCard__image');//popupIdImage change
 const closeButton = document.querySelector('.popup__close');
 
 const inputName = idCardPopup.querySelector('.popup__input_idCard_name');
