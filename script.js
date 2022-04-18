@@ -12,7 +12,7 @@ const idImagePopup = document.querySelector('.popup_type_idImage');
 const editButton = document.querySelector('.adventurer-idCard__button');
 const closeButton = document.querySelector('.popup__close');
 const editImage = idCard.querySelector('.adventurer-idCard__image');//popupIdImage change button
-const closeImagePopupButton = idCardPopup.querySelector('.popup__close_idImage');
+const closeImageButton = document.querySelector('.popup__close.popup__close_image');
 
 const inputName = idCardPopup.querySelector('.popup__input_idCard_name');
 const inputClass = idCardPopup.querySelector('.popup__input_idCard_class');
@@ -62,8 +62,8 @@ function handleProfileIdImage(event) {
 editButton.addEventListener('click', openProfilePopup);
 editImage.addEventListener('click', openProfileImagePopup);
 idCardPopup.addEventListener('submit', handleProfileFormSubmit);
-closeButton.addEventListener('click', () => closePopup(idCardPopup, idImagePopup  ));
-
+closeButton.addEventListener('click', () => closePopup(idCardPopup));
+closeImageButton.addEventListener('click', () => closePopup(idImagePopup));
 
 //Closing the popup windows escape button//
 function handleKeyDown(evt) {
