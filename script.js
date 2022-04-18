@@ -62,7 +62,7 @@ function handleProfileIdImage(event) {
 editButton.addEventListener('click', openProfilePopup);
 editImage.addEventListener('click', openProfileImagePopup);
 idCardPopup.addEventListener('submit', handleProfileFormSubmit);
-closeButton.addEventListener('click', () => closePopup(idCardPopup, idImagePopup));
+closeButton.addEventListener('click', () => closePopup(idCardPopup, idImagePopup  ));
 
 
 //Closing the popup windows escape button//
