@@ -19,8 +19,10 @@
 
 @import url(../blocks/popup/__open/popup__open.css);
 @import url(../blocks/popup/__idCard/popup__idcard.css);
+
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__imageForm/popup__imageForm.css);
+@import url(../blocks/popup/__idCard/popup__idCard.css);
 @import url(../blocks/popup/__input/popup__input.css);
 @import url(../blocks/popup/__submit/popup__submit.css);
 @import url(../blocks/popup/__close/popup__close.css);
