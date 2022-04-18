@@ -1,0 +1,12 @@
+.village__asterix {
+  grid-area: 7 / 15 / 11 / 18;
+  opacity: 0;
+}
+
+.village__asterix:hover {
+  background-color: black;
+  opacity: 0.75;
+  color: white;
+  text-align: center;
+  cursor: zoom-in;
+}
