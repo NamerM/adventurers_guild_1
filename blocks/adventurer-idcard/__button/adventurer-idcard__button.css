@@ -11,4 +11,5 @@
 .adventurer-idCard__button:hover {
   cursor: pointer;
   opacity: 0.8;
+  transform: scale(1.2);
 }
