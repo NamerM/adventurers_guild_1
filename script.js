@@ -3,18 +3,21 @@ const idCard = document.querySelector('.adventurer-idCard');
 const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
 const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
+const idImage = idCard.querySelector('.adventurer-idCard__image');
 
-
-const idForm = document.querySelector('.popup__form');
+const idForm = document.querySelector('.popup__form'); //popup__form_edit
 const popupList = document.querySelectorAll('.popup');
 const idCardPopup = document.querySelector('.popup_type_idCard');
+const idImagePopup = document.querySelector('.popup_type_idImage');
 const editButton = document.querySelector('.adventurer-idCard__button');
-const changeIdImage = document.querySelector('.adventurer-idCard__image');//popupIdImage change
 const closeButton = document.querySelector('.popup__close');
+const editImage = idCard.querySelector('.adventurer-idCard__image');//popupIdImage change button
+const closeImagePopupButton = idCardPopup.querySelector('.popup__close_idImage');
 
 const inputName = idCardPopup.querySelector('.popup__input_idCard_name');
 const inputClass = idCardPopup.querySelector('.popup__input_idCard_class');
 const inputPetName = idCardPopup.querySelector('.popup__input_idCard_pet');
+const inputImage = idCardPopup.querySelector('.popup__input_idCard_image');
 const popupSelector = 'popup__open';
 
 
@@ -44,10 +47,23 @@ function handleProfileFormSubmit(event) {
   closePopup (idCardPopup);
 }
 
+function openProfileImagePopup () {
+  openPopup(idImagePopup);
+
+}
+
+function handleProfileIdImage(event) {
+  event.preventDefault();
+  closePopup(idImagePopup);
+}
+
+
 // Event Handlers for idCard
 editButton.addEventListener('click', openProfilePopup);
+editImage.addEventListener('click', openProfileImagePopup);
 idCardPopup.addEventListener('submit', handleProfileFormSubmit);
-closeButton.addEventListener('click', () => closePopup(idCardPopup));
+closeButton.addEventListener('click', () => closePopup(idCardPopup, idImagePopup));
+
 
 //Closing the popup windows escape button//
 function handleKeyDown(evt) {

@@ -5,3 +5,11 @@
   border-radius: 10px;
   position: relative;
 }
+
+.popup__idCard-image {
+  width: 540px;
+  background-color: beige;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+}
