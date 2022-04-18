@@ -40,3 +40,8 @@
 @import url(../blocks/cards/__elements/cards__elements.css);
 @import url(../blocks/cards/__element/cards__element.css);
 @import url(../blocks/cards/__text/card__text.css);
+
+/* village grid elements */
+@import url(../blocks/village/__cacofonix/village__cacofonix.css);
+@import url(../blocks/village/__getafix/village__getafix.css);
+@import url(../blocks/village/__obelix/village__obelix.css);

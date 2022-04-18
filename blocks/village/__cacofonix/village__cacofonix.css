@@ -1,0 +1,11 @@
+.village__cacofonix {
+  grid-area:3 / 22 / 7 / 25;
+  opacity: 0;
+}
+
+.village__cacofonix:hover {
+  background-color: black;
+  opacity: 0.75;
+  color: white;
+  cursor: zoom-in;
+}

@@ -2,6 +2,6 @@
   background-image: url(../../../images/Asterix-village-1-1024x448.png);
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: repeat(40, 1fr);
-  grid-template-rows: repeat(24, 1fr);
+  grid-template-columns: repeat(40, 23.6px);
+  grid-template-rows: repeat(24, 18.6px);
 }

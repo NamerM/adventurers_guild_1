@@ -1,0 +1,13 @@
+.village__obelix {
+  grid-area: 3 / 18 / 7 / 21;
+  opacity: 0;
+}
+
+.village__obelix:hover {
+  background-color: black;
+  opacity: 0.75;
+  color: white;
+  text-align: center;
+  cursor: zoom-in;
+}
+
