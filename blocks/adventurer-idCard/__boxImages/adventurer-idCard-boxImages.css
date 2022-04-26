@@ -1,5 +1,8 @@
 .adventurer-idCard__boxImages {
   margin: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 .adventurer-idCard__boxImages-obelix {
@@ -12,7 +15,7 @@
   background-size: cover;
 }
 
-.adventurer-idCard__boxImages-vitalstistix {
+.adventurer-idCard__boxImages-vitalstatistix {
   background-image: url("../../../images/idcharacters/vitalstatistix.gif");
   background-size: cover;
 }
