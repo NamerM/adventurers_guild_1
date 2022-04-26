@@ -4,7 +4,7 @@ const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
 const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
 const idImage = idCard.querySelector('.adventurer-idCard__image');
-const idShiftButton = idCard.querySelector('#changeIdImage');
+const idShiftButton = idCard.querySelector('#changeImage');
 
 const idForm = document.querySelector('.popup__form'); //popup__form_edit
 const popupList = document.querySelectorAll('.popup');
@@ -60,12 +60,14 @@ function handleProfileIdImage(event) {
 }
 
 function IdImageChange(event) {
-  const idImage = event.target;
-  const change = document.querySelector(`.${changeIdImage}`);
-  idImage.classList.toggle(change);
+  const idShiftButton = event.target;
+  const idImage = idShiftButton;
+  //const change = idCard.querySelector(`${changeImage.id}`);
+  //idImage.style.backgroundImage = "url('')";
+  idImage.classList.add("adventurer-idCard__boxImages-obelix");
 }
 //const pickImage = idCard.querySelector('.adventurer-idCard__box')
-idShiftButton.addEventListener('click', IdImageChange);
+idImage.addEventListener('click', IdImageChange);
 
 
 
