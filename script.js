@@ -60,11 +60,11 @@ function handleProfileIdImage(event) {
 }
 
 function IdImageChange(event) {
-  const editImage = event.target;
-  editImage.classList.toggle('adventurer-idCard__boxImages-obelix');
+  const pickImage = event.target;
+  pickImage.classList.toggle('adventurer-idCard__boxImages-obelix');
 }
-
-editImage.addEventListener('click', IdImageChange);
+const pickImage = idCard.querySelector('.adventurer-idCard__box')
+pickImage.addEventListener('click', IdImageChange);
 
 
 
