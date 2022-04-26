@@ -52,10 +52,6 @@ function openProfileImagePopup () {
 
 }
 
-function ChangeImageByClick (evt){
-  const imageClick = evt.target;
-  imageClick.style.backgroundImage = "url(`.${IdImageAdventurer}`)"
-}
 
 function handleProfileIdImage(event) {
   event.preventDefault();
@@ -111,4 +107,8 @@ const IdImageAdventurer = [
   "https://namerm.github.io/adventurers_guild_1/images/idcharacters/brutus.gif"
 ];
 
+// function ChangeImageByClick (evt){
+//   const imageClick = evt.target;
+//   imageClick.style.backgroundImage = "url(`.${IdImageAdventurer}`)"
+// }
 
