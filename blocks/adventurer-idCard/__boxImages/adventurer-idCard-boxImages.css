@@ -1,0 +1,8 @@
+.adventurer-idCard__boxImages {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-obelix {
+  background-image: url('../../../images/idcharacters/obelix.gif');
+}
