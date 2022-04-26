@@ -59,13 +59,20 @@ function handleProfileIdImage(event) {
   closePopup(idImagePopup);
 }
 
-IdImageChange.forEach(  (event) => {
+function IdImageChange (event) {
   const idShiftButton = event.target;
-  const idImage = idShiftButton;
+  idShiftButton.forEach( function (image){
+    image = idShiftButton;
+    idImage.style.backgroundImage = "url('')";
+  });
+  //const idImage = idShiftButton;
   //const change = idCard.querySelector(`${changeImage.id}`);
   //idImage.style.backgroundImage = "url('')";
-  idImage.classList.add("adventurer-idCard__boxImages-obelix");
-});
+};
+
+//IdImageChange() {
+//  idImage.classList.add("");
+
 //const pickImage = idCard.querySelector('.adventurer-idCard__box')
 idImage.addEventListener('click', IdImageChange);
 
