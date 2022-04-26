@@ -1,5 +1,6 @@
 .adventurer-idCard__box {
   margin-top: 15px;
+  margin-left: 10px;
   display: grid;
   grid-template-columns: repeat(2, 30px);
   grid-template-rows: repeat(4, 26px);

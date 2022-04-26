@@ -1,8 +1,43 @@
 .adventurer-idCard__boxImages {
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0;
 }
 
 .adventurer-idCard__boxImages-obelix {
-  background-image: url('../../../images/idcharacters/obelix.gif');
+  background-image: url("../../../images/idcharacters/obelix.gif");
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-getafix {
+  background-image: url("../../../images/idcharacters/getafix.gif");
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-vitalstistix {
+  background-image: url("../../../images/idcharacters/vitalstatistix.gif");
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-idefix {
+  background-image: url("../../../images/idcharacters/idefix.gif");
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-julius {
+  background-image: url("../../../images/idcharacters/julius-caesar.gif");
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-cleopatra {
+  background-image: url("../../../images/idcharacters/cleopatra.gif");
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-cacofonix {
+  background-image: url("../../../images/idcharacters/cacofonix.png");
+  background-size: cover;
+}
+
+.adventurer-idCard__boxImages-brutus {
+  background-image: url("../../../images/idcharacters/brutus.gif");
+  background-size: cover;
 }
