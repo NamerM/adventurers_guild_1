@@ -59,6 +59,13 @@ function handleProfileIdImage(event) {
   closePopup(idImagePopup);
 }
 
+function IdImageChange(event) {
+  const editImage = event.target;
+  editImage.classList.toggle('adventurer-idCard__boxImages-obelix');
+}
+
+editImage.addEventListener('click', IdImageChange);
+
 
 
 // Event Handlers for idCard
@@ -111,4 +118,5 @@ const IdImageAdventurer = [
 //   const imageClick = evt.target;
 //   imageClick.style.backgroundImage = "url(`.${IdImageAdventurer}`)"
 // }
+
 
