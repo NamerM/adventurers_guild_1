@@ -4,7 +4,7 @@ const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
 const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
 const idImage = idCard.querySelector('.adventurer-idCard__image');
-//const idShiftButton = idCard.querySelector('');
+const idThumbnail = idCard.querySelector('.adventurer-idCard__box-button');
 
 const idForm = document.querySelector('.popup__form'); //popup__form_edit
 const popupList = document.querySelectorAll('.popup');
@@ -60,15 +60,17 @@ function handleProfileIdImage(event) {
 }
 
 //tıkla resin değiştir
-function IdImageChange (event) {
-  const idImage = event.target;
-  const change = idCard.querySelector(`#adventurer-idCard__boxImages-${input.id}`);
+function IdImageChange (event, input) {
+  const idThumbnail = event.target;
+  const idImageSelector = document.querySelectorAll(`#${idThumbnail}`);
 
-  idImage.style.backgroundImage = "url('')";
-  idImage.classList.add(change);
+  idImage.classList.toggle(idImageSelector);
+
+  //idImage.style.backgroundImage = "url('')";
+
 };
 
-idImage.addEventListener('click', IdImageChange);
+idThumbnail.addEventListener('click', IdImageChange);
 
 // function IdImageChange (event) {
 //   const idShiftButton = event.target;
