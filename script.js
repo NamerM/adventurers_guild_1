@@ -3,8 +3,6 @@ const idCard = document.querySelector('.adventurer-idCard');
 const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
 const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
-const idImage = idCard.querySelector('.adventurer-idCard__image');
-const idThumbnail = idCard.querySelectorAll('.adventurer-idCard__box-button');
 
 const idForm = document.querySelector('.popup__form'); //popup__form_edit
 const popupList = document.querySelectorAll('.popup');
@@ -48,48 +46,25 @@ function handleProfileFormSubmit(event) {
   closePopup (idCardPopup);
 }
 
-function openProfileImagePopup () {
+function openProfileImagePopup (e) {
   openPopup(idImagePopup);
 }
 
 
-function handleProfileIdImage(event) {
-  //event.preventDefault();
-  ChangeImageByClick();
-  closePopup(idImagePopup);
+//Image Change function
+const idImage = document.querySelector('.adventurer-idCard__image');
+const thumbButtons = [...document.querySelectorAll('.adventurer-idCard__box-button')];
+
+function handleImageClick(thumb) {
+  const img = thumb.querySelector('.adventurer-idCard__boxImages');
+  idImage.src = img.src;
 }
 
-// //tıkla resin değiştir
-// function IdImageChange (event) {
-//   const idThumbnail = event.target;
-//   //const idImageSelector = document.querySelectorAll(`#${adventurer-idCard__boxImages}`);
-
-//   idImage.style.backgroundImage = `url("https://namerm.github.io/adventurers_guild_1/images/idcharacters/obelix.gif")`;
-//    // //idImage.src = `url(${idThumbnail})`;
-//    // //document.getElementById('myImageID').src="images/my_other_image.png";
-// };
-
-// idThumbnail.addEventListener('click', IdImageChange());
-
-
-//Image Changer//
-const IdImageAdventurer = [
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/asterix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/obelix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/getafix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/vitalstatistix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/idefix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/julius-ceasar.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/cleopatra.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/cacofonix.png",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/brutus.gif"
-];
-
-// function ChangeImageByClick (evt){
-//   const imageClick = evt.target;
-//   imageClick.style.backgroundImage = "url(`.${IdImageAdventurer}`)"
-// }
-
+thumbButtons.forEach((thumb) => {
+  thumb.addEventListener('click', (e) => {
+    handleImageClick(thumb);
+  });
+});
 
 
 

@@ -1,12 +1,4 @@
-.adventurer-idCard__boxImages {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-.adventurer-idCard__boxImages-obelix {
-  background-image: url("../../../images/idcharacters/obelix.gif");
+ .adventurer-idCard__boxImages {
   background-repeat: no-repeat;
   background-size: cover ;
   cursor: pointer;
@@ -14,67 +6,3 @@
   height: 100%;;
   border:0;
 }
-
-.adventurer-idCard__boxImages-getafix {
-  background-image: url("../../../images/idcharacters/getafix.gif");
-  background-repeat: no-repeat;
-  background-size: cover ;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
-.adventurer-idCard__boxImages-vitalstatistix {
-  background-image: url("../../../images/idcharacters/vitalstatistix.gif");
-  background-repeat: no-repeat;
-  background-size: cover ;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
-.adventurer-idCard__boxImages-idefix {
-  background-image: url("../../../images/idcharacters/idefix.gif");
-  background-repeat: no-repeat;
-  background-size: cover ;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
-.adventurer-idCard__boxImages-julius {
-  background-image: url("../../../images/idcharacters/julius-caesar.gif");
-  background-repeat: no-repeat;
-  background-size: cover ;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
-.adventurer-idCard__boxImages-cleopatra {
-  background-image: url("../../../images/idcharacters/cleopatra.gif");
-  background-repeat: no-repeat;
-  background-size: cover ;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
-.adventurer-idCard__boxImages-cacofonix {
-  background-image: url("../../../images/idcharacters/cacofonix.png");
-  background-repeat: no-repeat;
-  background-size: cover ;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
-.adventurer-idCard__boxImages-brutus {
-  background-image: url("../../../images/idcharacters/brutus.gif");
-  background-repeat: no-repeat;
-  background-size: cover ;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-}
-
