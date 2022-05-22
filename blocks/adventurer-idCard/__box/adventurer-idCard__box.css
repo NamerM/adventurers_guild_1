@@ -6,3 +6,8 @@
   grid-template-rows: repeat(4, 26px);
   gap: 10px;
 }
+
+.adventurer-idCard__box-button {
+  margin:0;
+  padding: 0;
+}

@@ -4,7 +4,7 @@ const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
 const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
 const idImage = idCard.querySelector('.adventurer-idCard__image');
-const idShiftButton = idCard.querySelector('#changeImage');
+//const idShiftButton = idCard.querySelector('');
 
 const idForm = document.querySelector('.popup__form'); //popup__form_edit
 const popupList = document.querySelectorAll('.popup');
@@ -54,28 +54,38 @@ function openProfileImagePopup () {
 
 
 function handleProfileIdImage(event) {
-  //event.preventDefault();
+  event.preventDefault();
   ChangeImageByClick();
   closePopup(idImagePopup);
 }
 
+//tıkla resin değiştir
 function IdImageChange (event) {
-  const idShiftButton = event.target;
-  idShiftButton.forEach( function (image){
-    image = idShiftButton;
-    idImage.style.backgroundImage = "url('')";
-  });
-  //const idImage = idShiftButton;
-  //const change = idCard.querySelector(`${changeImage.id}`);
-  //idImage.style.backgroundImage = "url('')";
+  const idImage = event.target;
+  const change = idCard.querySelector(`#adventurer-idCard__boxImages-${input.id}`);
+
+  idImage.style.backgroundImage = "url('')";
+  idImage.classList.add(change);
 };
 
-//IdImageChange() {
-//  idImage.classList.add("");
-
-//const pickImage = idCard.querySelector('.adventurer-idCard__box')
 idImage.addEventListener('click', IdImageChange);
 
+// function IdImageChange (event) {
+//   const idShiftButton = event.target;
+//   idShiftButton.forEach( function (image){
+//     image = idShiftButton;
+//     idImage.style.backgroundImage = "url('')";
+//   });
+//   //const idImage = idShiftButton;
+//   //const change = idCard.querySelector(`${changeImage.id}`);
+//   //idImage.style.backgroundImage = "url('')";
+// };
+
+// //IdImageChange() {
+// //  idImage.classList.add("");
+
+// //const pickImage = idCard.querySelector('.adventurer-idCard__box')
+// idImage.addEventListener('click', IdImageChange);
 
 
 // Event Handlers for idCard
