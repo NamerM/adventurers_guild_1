@@ -60,34 +60,40 @@ function handleProfileIdImage(event) {
 }
 
 //tıkla resin değiştir
-function IdImageChange (event, input) {
+function IdImageChange (event) {
   const idThumbnail = event.target;
-  const idImageSelector = document.querySelectorAll(`#${idThumbnail}`);
+  const idImageSelector = document.querySelectorAll(`#${adventurer-idCard__boxImages}`);
 
   idImage.classList.toggle(idImageSelector);
 
-  //idImage.style.backgroundImage = "url('')";
+  //idImage.style.backgroundImage = `url(.${idThumbnail})`;
 
 };
 
 idThumbnail.addEventListener('click', IdImageChange);
 
-// function IdImageChange (event) {
-//   const idShiftButton = event.target;
-//   idShiftButton.forEach( function (image){
-//     image = idShiftButton;
-//     idImage.style.backgroundImage = "url('')";
-//   });
-//   //const idImage = idShiftButton;
-//   //const change = idCard.querySelector(`${changeImage.id}`);
-//   //idImage.style.backgroundImage = "url('')";
-// };
 
-// //IdImageChange() {
-// //  idImage.classList.add("");
+//Image Changer//
+const IdImageAdventurer = [
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/asterix.gif",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/obelix.gif",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/getafix.gif",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/vitalstatistix.gif",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/idefix.gif",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/julius-ceasar.gif",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/cleopatra.gif",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/cacofonix.png",
+  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/brutus.gif"
+];
 
-// //const pickImage = idCard.querySelector('.adventurer-idCard__box')
-// idImage.addEventListener('click', IdImageChange);
+// function ChangeImageByClick (evt){
+//   const imageClick = evt.target;
+//   imageClick.style.backgroundImage = "url(`.${IdImageAdventurer}`)"
+// }
+
+
+
+
 
 
 // Event Handlers for idCard
@@ -122,23 +128,5 @@ popupList.forEach((popup) => {
     }
   });
 });
-
-//Image Changer//
-const IdImageAdventurer = [
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/asterix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/obelix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/getafix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/vitalstatistix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/idefix.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/julius-ceasar.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/cleopatra.gif",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/cacofonix.png",
-  "https://namerm.github.io/adventurers_guild_1/images/idcharacters/brutus.gif"
-];
-
-// function ChangeImageByClick (evt){
-//   const imageClick = evt.target;
-//   imageClick.style.backgroundImage = "url(`.${IdImageAdventurer}`)"
-// }
 
 
