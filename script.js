@@ -46,10 +46,14 @@ function handleProfileFormSubmit(event) {
   closePopup (idCardPopup);
 }
 
-function openProfileImagePopup (e) {
+function openProfileImagePopup() {
   openPopup(idImagePopup);
 }
 
+function handleProfileImageSubmit(evt) {
+  evt.preventDefault();
+  closePopup(idImagePopup);
+}
 
 //Image Change function
 const idImage = document.querySelector('.adventurer-idCard__image');
@@ -74,6 +78,7 @@ thumbButtons.forEach((thumb) => {
 editButton.addEventListener('click', openProfilePopup);
 editImage.addEventListener('click', openProfileImagePopup);
 idCardPopup.addEventListener('submit', handleProfileFormSubmit);
+idImagePopup.addEventListener('submit', handleProfileImageSubmit);
 closeButton.addEventListener('click', () => closePopup(idCardPopup));
 closeImageButton.addEventListener('click', () => closePopup(idImagePopup));
 
