@@ -5,4 +5,10 @@
   width: 100%;
   background-color: darkolivegreen;
   color: white;
+  border: 2px solid beige;
+}
+
+.popup__submit:hover {
+  cursor: pointer;
+  border-color: gray;
 }

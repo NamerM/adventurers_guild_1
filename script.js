@@ -4,7 +4,7 @@ const idName = idCard.querySelector('.adventurer-idCard__text_name');
 const idClass = idCard.querySelector('.adventurer-idCard__text_class');
 const idPetName = idCard.querySelector('.adventurer-idCard__text_pet');
 const idImage = idCard.querySelector('.adventurer-idCard__image');
-const idThumbnail = idCard.querySelector('.adventurer-idCard__box-button');
+const idThumbnail = idCard.querySelectorAll('.adventurer-idCard__box-button');
 
 const idForm = document.querySelector('.popup__form'); //popup__form_edit
 const popupList = document.querySelectorAll('.popup');
@@ -54,23 +54,22 @@ function openProfileImagePopup () {
 
 
 function handleProfileIdImage(event) {
-  event.preventDefault();
+  //event.preventDefault();
   ChangeImageByClick();
   closePopup(idImagePopup);
 }
 
-//tıkla resin değiştir
-function IdImageChange (event) {
-  const idThumbnail = event.target;
-  const idImageSelector = document.querySelectorAll(`#${adventurer-idCard__boxImages}`);
+// //tıkla resin değiştir
+// function IdImageChange (event) {
+//   const idThumbnail = event.target;
+//   //const idImageSelector = document.querySelectorAll(`#${adventurer-idCard__boxImages}`);
 
-  idImage.classList.toggle(idImageSelector);
+//   idImage.style.backgroundImage = `url("https://namerm.github.io/adventurers_guild_1/images/idcharacters/obelix.gif")`;
+//    // //idImage.src = `url(${idThumbnail})`;
+//    // //document.getElementById('myImageID').src="images/my_other_image.png";
+// };
 
-  //idImage.style.backgroundImage = `url(.${idThumbnail})`;
-
-};
-
-idThumbnail.addEventListener('click', IdImageChange);
+// idThumbnail.addEventListener('click', IdImageChange());
 
 
 //Image Changer//
