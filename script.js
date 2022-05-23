@@ -70,6 +70,18 @@ thumbButtons.forEach((thumb) => {
   });
 });
 
+//evt.target method for Image Change
+// const idImage = document.querySelector('.adventurer-idCard__image');
+// const thumbButtons = [...document.querySelectorAll('.adventurer-idCard__box-button')];
+
+//   function handleImageClick(evt) {
+//     const img = evt.target.classList.contains('.adventurer-idCard_boxImages');
+//     idImage.src = img.src;
+//   }
+
+//   thumbButtons.addEventListener('click', handleImageClick());
+
+
 
 
 
